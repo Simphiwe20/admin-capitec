@@ -1,0 +1,831 @@
+[
+    {
+        "id": "sd_8uQYGG2K9kvNcabl",
+        "type": "tab",
+        "createdDate": "2024-05-22T07:47:32.196Z",
+        "label": "selectedLoan",
+        "disabled": false,
+        "info": "",
+        "functionSeq": 0,
+        "generateNext": true,
+        "serviceName": "selectedLoanComponent"
+    },
+    {
+        "id": "sd_ZJxIlh6PeVoj3K3v",
+        "type": "OnInit",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "common",
+        "nodeType": "start",
+        "name": "",
+        "functionName": "sd_ZJxIlh6PeVoj3K3v",
+        "category": "Lifecycle Events",
+        "x": 30,
+        "y": 30,
+        "wires": [
+            [
+                "sd_2ZNYiUUvCH84ctHU"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "selectedLoanComponent"
+    },
+    {
+        "id": "sd_2ZNYiUUvCH84ctHU",
+        "type": "UseDependency",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "property": "",
+        "propertyType": "bh",
+        "propertyGv": "bh.",
+        "alias": "",
+        "modules": [
+            {
+                "textIp": "Router",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": "router"
+                },
+                "injectable": true
+            }
+        ],
+        "import_all": false,
+        "library": "@angular/router",
+        "serviceDesignerType": "pages",
+        "functionName": "sd_2ZNYiUUvCH84ctHU",
+        "category": "Function",
+        "x": 105,
+        "y": 40,
+        "wires": [
+            [
+                "sd_j1Up3S7Lu7uXeilp"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_j1Up3S7Lu7uXeilp",
+        "type": "PageVariables",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "pages",
+        "nodeType": "flow",
+        "name": "",
+        "inputs": 1,
+        "outputs": 1,
+        "operation": "set",
+        "globalVariables": [
+            {
+                "textIp": "name",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "surname",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "idNumber",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "cellNumber",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "email",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "status",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "doc",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "currentAccount",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "selected",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "update_",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "false"
+                }
+            },
+            {
+                "textIp": "userInfos",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "userData",
+                "typedIpValue": {
+                    "type": "this.page",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "time",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "profileImage",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "image",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "showImage",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "false"
+                }
+            },
+            {
+                "textIp": "selectedUser",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            },
+            {
+                "textIp": "showLoader",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": "false"
+                }
+            },
+            {
+                "textIp": "rejectionReason",
+                "typedIpValue": {
+                    "type": "literal",
+                    "value": ""
+                }
+            }
+        ],
+        "functionName": "sd_j1Up3S7Lu7uXeilp",
+        "category": "Function",
+        "x": 205,
+        "y": 40,
+        "wires": [
+            [
+                "sd_H299LlXOjbeNbUX2"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_72Ms36Z0Eb1BOYML",
+        "type": "Script",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "let userDataString = sessionStorage.getItem('userLoan');\n\nlet userData = JSON.parse(userDataString || '[]');\npage.userData = userData;\npage.userData.interestRate = 13\n\nbh.url = page.ssdUrl + 'get-customers'\n\nconsole.log(\"recived\",page.userData  )\n\npage.profileImage = page.ssdUrl + `download-picture/${page.userData.email}`\n",
+        "functionName": "sd_72Ms36Z0Eb1BOYML",
+        "category": "Function",
+        "x": 405,
+        "y": 40,
+        "wires": [
+            [
+                "sd_ro0koG4IKXUtZsR4"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_2J0mYpWppmiIyBdy",
+        "type": "PageStart",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "pages",
+        "nodeType": "start",
+        "name": "update",
+        "outputs": 1,
+        "inputVariables": [
+            {
+                "key": "form",
+                "defaultValue": {
+                    "type": "any",
+                    "value": ""
+                },
+                "output": false
+            }
+        ],
+        "localVariables": [],
+        "flow_type": "sync",
+        "functionName": "update",
+        "category": "General",
+        "x": 25,
+        "y": 280,
+        "wires": [
+            [
+                "sd_ssfyh38o8yOK0Gme"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": true,
+        "serviceName": "selectedLoanComponent"
+    },
+    {
+        "id": "sd_ssfyh38o8yOK0Gme",
+        "type": "Environment",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "envMaps": [
+            {
+                "flowVar": {
+                    "type": "this.page",
+                    "value": "ssdUrl"
+                },
+                "envProperty": "ssdURL"
+            }
+        ],
+        "functionName": "sd_ssfyh38o8yOK0Gme",
+        "category": "General",
+        "x": 125,
+        "y": 280,
+        "wires": [
+            [
+                "sd_EF4Oha4eQkQI0Lm9"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_EF4Oha4eQkQI0Lm9",
+        "type": "Script",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.update_ = true;\npage.userData.date =  new Date();\npage.userData.comeFrom = \"Loan\";\n\npage.showLoader = true\n\nbh.url = page.ssdUrl + 'update-loan';\nbh.collection = 'loans';\n\nbh.depositURL = page.ssdUrl + 'update'\n\nconsole.log('Form: ', bh.input.form)\nconsole.log('Userdata: ', page.userData)\n\nif(page.userData.status == 'rejected') {\n    page.userData.rejectionReason = page.rejectionReason\n}",
+        "functionName": "sd_EF4Oha4eQkQI0Lm9",
+        "category": "Function",
+        "x": 225,
+        "y": 280,
+        "wires": [
+            [
+                "sd_R58AMsRVn4rtPf3y"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_R58AMsRVn4rtPf3y",
+        "type": "PageSwitch",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "form.valid",
+        "propertyType": "bh.input",
+        "propertyGv": "bh.input.form.valid",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_R58AMsRVn4rtPf3y",
+        "category": "Function",
+        "x": 305,
+        "y": 280,
+        "wires": [
+            [
+                "sd_qOSoJ8UqSZhdqf4b"
+            ],
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_qOSoJ8UqSZhdqf4b",
+        "type": "HttpRequest",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "put",
+        "methodMappingObj": {},
+        "urlMapping": "bh.url",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "url"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "this.page.userData",
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "userData"
+        },
+        "resultMapping": "this.page.result",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_qOSoJ8UqSZhdqf4b",
+        "category": "HTTP",
+        "x": 385,
+        "y": 160,
+        "wires": [
+            [
+                "sd_xGvOlkNIZyH2prbc"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_YEqgpwm13ln3udN7",
+        "type": "SnackBar",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "message": {
+            "type": "bh",
+            "value": "feedback"
+        },
+        "action": {
+            "type": "str",
+            "value": "OK"
+        },
+        "duration": {
+            "type": "num",
+            "value": "3000"
+        },
+        "horizontalPosition": "center",
+        "verticalPosition": "bottom",
+        "panelClass": {
+            "type": "str",
+            "value": ""
+        },
+        "direction": "ltr",
+        "functionName": "sd_YEqgpwm13ln3udN7",
+        "category": "General",
+        "x": 885,
+        "y": 160,
+        "wires": [
+            [
+                "sd_48CKw2af704RvPyl"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_48CKw2af704RvPyl",
+        "type": "Navigation",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/home/Loan management",
+        "functionName": "sd_48CKw2af704RvPyl",
+        "category": "Navigation",
+        "x": 965,
+        "y": 160,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_H299LlXOjbeNbUX2",
+        "type": "Environment",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "outputs": 1,
+        "envMaps": [
+            {
+                "flowVar": {
+                    "type": "this.page",
+                    "value": "ssdUrl"
+                },
+                "envProperty": "ssdURL"
+            }
+        ],
+        "functionName": "sd_H299LlXOjbeNbUX2",
+        "category": "General",
+        "x": 285,
+        "y": 40,
+        "wires": [
+            [
+                "sd_72Ms36Z0Eb1BOYML"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ro0koG4IKXUtZsR4",
+        "type": "HttpRequest",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "get",
+        "methodMappingObj": {},
+        "urlMapping": "bh.url",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "url"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": ""
+        },
+        "resultMapping": "this.page.users",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "users"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_ro0koG4IKXUtZsR4",
+        "category": "HTTP",
+        "x": 520,
+        "y": 40,
+        "wires": [
+            [
+                "sd_8DBd5eafoSLS50GB"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_8DBd5eafoSLS50GB",
+        "type": "Script",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.selectedUser = page.users.find((user, indx) => user.email == page.userData.email)\n\nconsole.log('Selected User: ', page.selectedUser)",
+        "functionName": "sd_8DBd5eafoSLS50GB",
+        "category": "Function",
+        "x": 625,
+        "y": 40,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_xGvOlkNIZyH2prbc",
+        "type": "PageSwitch",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "property": "userData.status",
+        "propertyType": "this.page",
+        "propertyGv": "this.page.userData.status",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "approved",
+                "vt": "str",
+                "gv": "\"approved\""
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "functionName": "sd_xGvOlkNIZyH2prbc",
+        "category": "Function",
+        "x": 485,
+        "y": 160,
+        "wires": [
+            [
+                "sd_roOT7DU7Au8HVCJK"
+            ],
+            [
+                "sd_Nb8LGOahzdiuarax"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_SGx89taxkwrBpRSk",
+        "type": "HttpRequest",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "put",
+        "methodMappingObj": {},
+        "urlMapping": "bh.depositURL",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "depositURL"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "this.page.selectedUser",
+        "reqBodyObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "selectedUser"
+        },
+        "resultMapping": "this.page.result",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "result"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_SGx89taxkwrBpRSk",
+        "category": "HTTP",
+        "x": 805,
+        "y": 160,
+        "wires": [
+            [
+                "sd_YEqgpwm13ln3udN7"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_ojHEXSneLJV6lFb3",
+        "type": "SnackBar",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "message": {
+            "type": "bh",
+            "value": "feedback"
+        },
+        "action": {
+            "type": "str",
+            "value": "OK"
+        },
+        "duration": {
+            "type": "num",
+            "value": "3000"
+        },
+        "horizontalPosition": "center",
+        "verticalPosition": "bottom",
+        "panelClass": {
+            "type": "str",
+            "value": ""
+        },
+        "direction": "ltr",
+        "functionName": "sd_ojHEXSneLJV6lFb3",
+        "category": "General",
+        "x": 705,
+        "y": 260,
+        "wires": [
+            [
+                "sd_2ZqvCoHgzXDtSohh"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_2ZqvCoHgzXDtSohh",
+        "type": "Navigation",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "path": "/home/Loan management",
+        "functionName": "sd_2ZqvCoHgzXDtSohh",
+        "category": "Navigation",
+        "x": 825,
+        "y": 260,
+        "wires": [
+            []
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_roOT7DU7Au8HVCJK",
+        "type": "Script",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "page.selectedUser.available_balance += page.userData.amount\n\nbh.date = page.userData.date.toDateString()\nbh.date = bh.date.split(' ')\nbh.date = `${bh.date[1]} ${bh.date[2]} ${bh.date[3]}`\n\nbh.message = {\n    message: `Capitec: Received ${page.userData.amount} from Capitec Ltd for ${page.userData.reason}'s Credit'; Digital Payment. Avail R${page.selectedUser.available_balance}; ${bh.date}`,\n    read: false,\n    _type: \"deposit\",\n    belongsTo: page.userData.accountNumber\n}\n\nbh.msgURL = page.ssdUrl + 'add-messages'\n\nbh.feedback = `${page.userData.reason} loan for ${page.userData.fullName} was approved`",
+        "functionName": "sd_roOT7DU7Au8HVCJK",
+        "category": "Function",
+        "x": 585,
+        "y": 160,
+        "wires": [
+            [
+                "sd_G3nLVjaea3N2i6hK"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_Nb8LGOahzdiuarax",
+        "type": "Script",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "common",
+        "nodeType": "flow",
+        "name": "",
+        "script": "console.log('User to be updated: ', page.userData)\n\nconsole.log(page.userData)\n\nbh.feedback = `${page.userData.reason} loan for ${page.userData.fullName} was rejected`\n",
+        "functionName": "sd_Nb8LGOahzdiuarax",
+        "category": "Function",
+        "x": 585,
+        "y": 260,
+        "wires": [
+            [
+                "sd_ojHEXSneLJV6lFb3"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    },
+    {
+        "id": "sd_G3nLVjaea3N2i6hK",
+        "type": "HttpRequest",
+        "z": "sd_8uQYGG2K9kvNcabl",
+        "viewType": "client-pages",
+        "nodeType": "flow",
+        "name": "",
+        "method": "post",
+        "methodMappingObj": {},
+        "urlMapping": "bh.msgURL",
+        "urlMappingObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "msgURL"
+        },
+        "ret": "json",
+        "retMappingObj": {},
+        "observe": "",
+        "observeMappingObj": {},
+        "reportProgress": false,
+        "withCreds": false,
+        "reqBody": "bh.message",
+        "reqBodyObj": {
+            "mapVarType": "bh",
+            "mapVarValue": "message"
+        },
+        "resultMapping": "this.page.res",
+        "resultMappingObj": {
+            "mapVarType": "this.page",
+            "mapVarValue": "res"
+        },
+        "headers": {},
+        "headersObj": [],
+        "headerMappingObj": {},
+        "params": {},
+        "paramsObj": [],
+        "paramMappingObj": {},
+        "functionName": "sd_G3nLVjaea3N2i6hK",
+        "category": "HTTP",
+        "x": 700,
+        "y": 160,
+        "wires": [
+            [
+                "sd_SGx89taxkwrBpRSk"
+            ]
+        ],
+        "__n_excludedFromValidation__": {},
+        "generateNext": false,
+        "serviceName": "selectedLoanComponent",
+        "generated": true
+    }
+]
